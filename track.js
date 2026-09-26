@@ -1,4 +1,4 @@
-// track.js：比一步（基线：一律算没刷新）
+// track.js：比一步，严格小于当前最低才算新低
 export function isLow(current, lowest) {
-  return false;
+  return current < lowest;
 }
